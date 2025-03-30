@@ -1,0 +1,29 @@
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  min-width: 150px;
+  max-width: 200px;
+  border-right: 1px solid #ccc;
+  padding: 10px;
+
+  &-item {
+    padding: 8px;
+    text-decoration: none;
+    color: black;
+
+    &:hover {
+      background-color: #f0eded;;
+    }
+
+    &.active {
+      background-color: #e0e0e0;
+      font-weight: bold;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    min-width: 100%;
+  }
+}
